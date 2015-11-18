@@ -1,21 +1,26 @@
 /*Common CSS*/
 html{
+    min-width: 1400px;
+    max-width: 1400px;
+    background-image: url(../img/Tickle-Forest_Landscape.jpg);
+    background-repeat: no-repeat;
     width:100%;
 }
+/*
 #forest{
     display:block;
     margin:25% 25%;
-    width:300px;
-    height:300px;
     position:absolute;
 }
-#ghost{
+*/
+.squirrel{
     display:block;
-    width:25%;
-    margin: 25% 10%;
-    position: relative;
+    width:10%;
+    max-width: 100px;
+    position: absolute;
+    content:url(../img/ghost.gif);
 }
-#ghost img{
+.squirrel img{
     display: block;
     width:100%;
 }
