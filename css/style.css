@@ -13,6 +13,10 @@ html{
     position:absolute;
 }
 */
+.squirrel img, .bear img{
+    display: block;
+    width:100%;
+}
 .squirrel{
     display:block;
     width:10%;
@@ -20,9 +24,18 @@ html{
     position: absolute;
     content:url(../img/ghost.gif);
 }
-.squirrel img{
-    display: block;
-    width:100%;
+#bear1{
+	width:300px;
+	height:145px;	
+	background-image:url(../working/Tickle_Forest_Art/Bear_SS.gif);
+	background-repeat:no-repeat;
+	background-position:;
+}
+.bear{
+	display:block;
+	position:absolute;
+	/*content:url(../working/Tickle_Forest_Art/Bear_SS.gif);*/
+	
 }
 
 /* clearfix */
