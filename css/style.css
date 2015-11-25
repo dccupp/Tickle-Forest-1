@@ -3,7 +3,7 @@ html{
     min-width: 1400px;
     max-width: 1400px;
     background-image: url(../img/Tickle-Forest_Landscape.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width:100%;
 }
 /*

@@ -4,15 +4,16 @@
  * @version 1.0, November 2015
  *
  * @param id    string - id of the animal
- * @param xpos  int - horizontal starting position
- * @param ypos  int - vertical starting position
+ * @param aClass string - class of the animal
+ * @param xPos  int - horizontal starting position
+ * @param yPos  int - vertical starting position
  * @param upNum int - number used to track squirrel's position relative to the top of the grid
  * @param downNum int - number used to track squirrel's position relative to the bottom of the grid
  * @param leftNum int - number used to track squirrel's position relative to the left side of the grid
  * @param rightNum int - number used to track squirrel's position relative to the right side of the grid
  */
 
-function Squirrel(id, xPos, yPos, upNum, downNum, leftNum, rightNum){
+function Squirrel(id, aClass,xPos, yPos, upNum, downNum, leftNum, rightNum){
     //properties to let each animal store its own x/y position
     this.x = xPos;
     this.y = yPos;
@@ -38,7 +39,7 @@ function Squirrel(id, xPos, yPos, upNum, downNum, leftNum, rightNum){
     */
     this.create = function(){
         this.animal_on_page = document.createElement("div");
-        this.animal_on_page.className = "squirrel";
+        this.animal_on_page.className = aClass;
         this.animal_on_page.id = this.id;
         this.animal_on_page.style.left = this.x + "px";
         this.animal_on_page.style.top = this.y + "px";
@@ -47,7 +48,7 @@ function Squirrel(id, xPos, yPos, upNum, downNum, leftNum, rightNum){
         thisObject = this;
         thisObject.moveInt =setInterval(function(){
             thisObject.squirrelBehavior(); 
-        },1000);
+        },(Math.floor((Math.random()*3000)+2000)));
     }//end function create();
 	
     /**
