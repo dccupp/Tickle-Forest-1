@@ -3,8 +3,16 @@ html{
     min-width: 1400px;
     max-width: 1400px;
     background-image: url(../img/Tickle-Forest_Landscape.jpg);
-    background-repeat: repeat;
+    background-repeat:repeat;
     width:100%;
+    max-width: 1440px;
+}
+footer{
+    background-color:green;
+    height:1000px;
+    position: relative;
+    margin-top: 800px;
+    width:1950px;
 }
 /*
 #forest{
@@ -13,7 +21,7 @@ html{
     position:absolute;
 }
 */
-.squirrel img, .bear img{
+.squirrel img, .bear img, .bird img{
     display: block;
     width:100%;
 }
@@ -29,13 +37,24 @@ html{
 	height:145px;	
 	background-image:url(../working/Tickle_Forest_Art/Bear_SS.gif);
 	background-repeat:no-repeat;
-	background-position:;
+	background-position:top left;
 }
 .bear{
 	display:block;
 	position:absolute;
 	/*content:url(../working/Tickle_Forest_Art/Bear_SS.gif);*/
 	
+}
+#bird1{
+    width: 100px;
+    height:50px;
+    background-image:url(../working/Tickle_Forest_Art/bird_SS.gif);
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+.bird{
+    display: block;
+    position:absolute;
 }
 
 /* clearfix */
